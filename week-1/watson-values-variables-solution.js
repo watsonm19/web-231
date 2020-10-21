@@ -3,7 +3,7 @@
 ; Title: Discussion 1.1 - Values and Variables
 ; Author: Mark Watson
 ; Date: October 21, 2020
-; Description: Basic JavaScript code meant to have two errors within it for revision.
+; Description: Basic JavaScript code with solutions
 ;========================================================
 */
 
