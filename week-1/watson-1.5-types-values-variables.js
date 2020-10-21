@@ -12,7 +12,7 @@ console.log("Employee 1");
 console.log("First Name: " + firstName);
 console.log("Last Name: " + lastName);
 console.log("Address: " + address);
-console.log("Pay Rate: $" + payRate);
+console.log("Pay Rate: " + "$" + payRate);
 console.log("Hire Date: " + hireDate);
 
 //=============
