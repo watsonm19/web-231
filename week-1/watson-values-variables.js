@@ -8,10 +8,15 @@
 */
 
 var changeThisNumber = 99;
+var changeThisNumberMore = 51;
+var makeThisNumberSmall = 200;
 
 ChangeThisNumber++;
 
+changeThisNumberMore =* 2;
 
-for (i = 0 | i < changeThisNumber | i++) {
-    console.log(i);
-}
+makeThisNumberSmall = makeThisNumberSmall / 10;
+
+console.log(changeThisNumber);
+console.log(changeThisNumberMore);
+console.log(makeThisNumberSmall);
