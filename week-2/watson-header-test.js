@@ -7,7 +7,7 @@
 ;===========================================
 */
 
-// exports header.js file for use
+// imports header.js file for use
 const header = require('../watson-header.js');
 
 // logs header to console for display
