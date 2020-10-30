@@ -23,11 +23,11 @@
 */
 
 // imports watson-header.js file for use
-const header = require('../watson-header.js')
+const header = require('../watson-header.js');
 
 // function property definitions
 myName.mark = 'Mark';
-myName.watson = 'Watson'
+myName.watson = 'Watson';
 
 /**
  * Params: none
@@ -50,7 +50,7 @@ function myLastName() {
 // header output
 console.log(header.display('Mark', 'Watson', 'Exercise 2.2'));
 // new line
-console.log('\n')
+console.log('\n');
 // output
 console.log('Hello ' + myName() + ' ' + myLastName());
 
