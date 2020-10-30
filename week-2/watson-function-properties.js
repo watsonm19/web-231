@@ -48,7 +48,7 @@ function myLastName() {
 }
 
 // header output
-console.log(header.display('Mark', 'Watson', 'Exercise 2.2'));
+console.log(header.display('Mark', 'Watson', 'Exercise 2.3'));
 // new line
 console.log('\n');
 // output
