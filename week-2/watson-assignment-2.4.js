@@ -1,6 +1,6 @@
 /*
 ===============================================
-; Title: Assignment 2.4
+; Title: Assignment 2.4 - Functions
 ; Author: Professor Krasso
 ; Date: 31 October 2020
 ; Modified By: Mark Watson
