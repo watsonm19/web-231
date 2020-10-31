@@ -1,8 +1,9 @@
 /*
 ============================================
 ; Title:  function-properties.js
-; Author: Mark Watson
+; Author: Professor Krasso
 ; Date:   30 October 2020
+; Modified By: Mark Watson
 ; Description: Demonstrates how to define and call function properties
 ;===========================================
 */
