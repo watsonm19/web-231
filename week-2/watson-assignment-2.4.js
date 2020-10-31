@@ -91,9 +91,9 @@ console.log(header.display('Mark', 'Watson', 'Assignment 2.4') + '\n');
 
 // program output
 console.log('Hello my name is ' + fullName(firstName, lastName) + '! \n');
-
+// new line
 console.log('Today\'s date is ' + dateWriter(currentYear, currentMonth, currentDay) + ' and the current temperature is ' + formatNumber(temp, decimalPlace) + ' degrees. \n');
-
+// new line
 console.log('I am ' + convertToInt(age) + ' years old and my savings account goal is ' + convertToFloat(savingsGoal) + ' dollars.');
 
 
