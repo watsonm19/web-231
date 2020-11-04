@@ -3,7 +3,7 @@
 ; Title: Discussion Board 3.1 - Control Statements
 ; Author: Mark Watson
 ; Date: 4 November 2020
-; Description: This program contains a function that is intended to count up to a specific number. The program currently contains 2 errors that need to be corrected in order for it to work.
+; Description: This program contains a function that will to count up to a specific number and log every integer to the console.
 ===============================================
 */
 
