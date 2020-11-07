@@ -1,6 +1,6 @@
 /*
 ===============================================
-; Title: Exercise 3.2
+; Title: Exercise 3.2 - Pattern Matching Functions
 ; Author: Professor Krasso
 ; Date: 2 November 2020
 ; Modified By: Mark Watson
