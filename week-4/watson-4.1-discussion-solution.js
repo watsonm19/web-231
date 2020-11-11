@@ -41,9 +41,9 @@ function checkEven(num) {
  * a loop which generates 10 random integers from 0-51 and places them in the lottoNums array in order of the index number (i), then uses checkEven function for each generated number
 */
 for (i = 0; i < lottoNums.length; i++) {
-  lottoNums[i] = Math.floor(Math.random() * 52);
+  lottoNums[i] = Math.floor(Math.random() * 52); //stores random number in lottoNums array with index number (i)
 
-  checkEven(lottoNums[i]);
+  checkEven(lottoNums[i]); //function invocation
 }
 
 // output
