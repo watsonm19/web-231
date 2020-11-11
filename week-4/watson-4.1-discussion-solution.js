@@ -1,10 +1,10 @@
 /*
-===============================================
+================================================
 ; Title: Discussion Board 4.1 - Arrays
 ; Author: Mark Watson
 ; Date: 11 November 2020
 ; Description: This JavaScript program generates 10 random integers within an array, lottoNums. If the amount of even numbers generated within the array is seven (7) or greater, the program will print "You WIN!!!" otherwise, it will print "Sorry, you LOSE... try again".
-===============================================
+================================================
 */
 
 /*
