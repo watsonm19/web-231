@@ -121,6 +121,7 @@ composerGenres.forEach(arr => {
 
 // end program
 
+// OPTIONAL OUTPUT METHOD - using for...of
 // for (let [name, rating] of composerRatings) {
 //   console.log('Rating: ' + rating);
 //   console.log('Composer: ' + name + '\n');
