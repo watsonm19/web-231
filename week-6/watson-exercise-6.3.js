@@ -35,7 +35,7 @@ const ticket = {
 // header output
 console.log(header.display('Mark', 'Watson', 'Exercise 6.3'), '\n'); //new line
 
-// output - concatenated string containing the values of each property in the test object
+// output - string template literal containing the values of each property in the test object
 console.log(`{id: ${ticket.id}, name: ${ticket.name}, requestor: ${ticket.requestor}}`);
 
 
