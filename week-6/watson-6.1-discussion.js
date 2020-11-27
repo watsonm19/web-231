@@ -24,6 +24,7 @@ Expected Output:
 //start program
 
 
+// object containing data of a user
 let user = {
     fullName: 'Damian Lamonte',
     username: 'The_Letter_O',
@@ -36,25 +37,31 @@ let user = {
         yearsWorked: 8
     },
 
+    // gets fullName and age of user, returns string containing values
     get nameAge() {
         `${this.fullName}, ${this.age} years old`
     },
 
+    // sets fullName of user to a new value
     set name() {
         this.fullName = newFullName;
     },
 
+    // sets age of user to a new value by adding the argument number to the current value
     set addYears(num) {
         this.age = this.age + num;
     }
 }
 
+// output - chosen values in the user object
 console.log('--- ORIGINAL OUTPUT ---');
 console.log(`This user is ${user.username} and their name is ${user.nameAge}. Occupation: ${user.occupation}.`, '\n');
 
+// changes name and age values of user
 user.name = 'Damian Lillard';
 user.addYears = 1;
 
+// output - chosen values in the updated user object
 console.log('--- CORRECTED OUTPUT ---');
 console.log(`This user is ${user.username} and their name is ${user.nameAge}. Occupation: ${user.occupation}.`);
 
