@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+============================================
+; Title:  Discussion 7.1 - JavaScript in Web Browsers
+; Author: Mark Watson
+; Date:   3 December 2020
+; Description: This program shows how to manipulate the DOM using client-side JavaScript embedded in HTML. Includes corrections and a full solution to prior 2 errors.
+;===========================================
+-->
+
+<!--
+  Expected functions & results:
+
+  - The <h1> text in the browser should change 2 times within a span of 5 seconds
+  - The background color of the first <li> should change to purple when clicked on in the browser
+  - The current date & time should display in the second <li> when clicked on in the browser
+  - The background color of the third <li> should change to yellow when clicked on in the browser
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion 7.1</title>
+  </head>
+  <!-- styles for the list + more added style for better clarity -->
+  <style>
+    li {
+      padding: 10px;
+      cursor: pointer;
+    }
+    li:hover {
+      color: gray;
+    }
+  </style>
+  <body>
+    <!-- title -->
+    <h1 id="title">This is not a good title...</h1>
+
+    <!-- list of "onclick" event handler examples -->
+    <ul>
+      <li id="purple">Click to See Purple</li>
+      <li id="date">Click to See The Date & Time</li>
+      <li id="yellow">Click to See Yellow</li>
+    </ul>
+
+    <!-- javascript -->
+    <script type="text/javascript">
+
+      // html selector variables
+      const title = document.getElementById('title');
+      const purple = document.getElementById('purple');
+      const date = document.getElementById('date');
+      const yellow = document.getElementById('yellow');
+
+      // change h1 text after 2.5 seconds
+      setTimeout(() => {title.innerHTML = 'Loading new h1...'}, 2500);
+      // change h1 text again after 5 seconds
+      setTimeout(() => {title.innerHTML = 'DOM Manipulation'}, 5000);
+
+      // event handlers
+
+      // change the background color to purple
+      purple.onclick = () => {purple.style.backgroundColor = 'purple';}
+      // change the text to represent the current date and time
+      date.onclick = () => {date.innerHTML = new Date().toString();}
+      // change the background color to yellow
+      yellow.onclick = () => {yellow.style.backgroundColor = 'yellow';}
+    </script>
+  </body>
+  <!--
+    ** =========================================
+    **               Solution
+    ** =========================================
+    // .getElementId is not a method for selecting an element is it was missing the word "By" in the call. The proper method is .getElementById - corrections are reflected above for each of the selector variables.
+
+    // In the last selector variable, yellow, the parameter within the .getElementById method was capitalized, "Yellow". To return the proper element, all characters need to match the id of the element exactly. In this instance, all letters should be lower case.
+    ** =========================================
+  -->
+</html>
