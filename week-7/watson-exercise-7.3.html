@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+============================================
+; Title:  Exercise 7.3 - Client-Side JavaScript
+; Author: Professor Krasso
+; Date:   2 December 2020
+; Modified By: Mark Watson
+; Description: Demonstrates client-side JavaScript
+;===========================================
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 7.3</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+  <body>
+
+    <script type="text/javascript">
+      // prints html list
+      document.write('<h1>SHOPPING LIST v.1</h1>' +
+      '<ol>' +
+      '<li>Oranges</li>' +
+      '<li>Apples</li>' +
+      '<li>Pears</li>' +
+      '<li>Limes</li>' +
+      '<li>Lemons</li>' +
+      '</ol>');
+    </script>
+
+    <!-- table for groceries -->
+    <div id="list"></div>
+
+    <script type="text/javascript">
+      // selector variable for #list div
+      const list = document.getElementById('list');
+
+      // insert html table into #list div
+      list.innerHTML = '<h1>SHOPPING LIST v.2</h1>' +
+      '<table>' +
+      '<thead>' +
+      '<tr>' +
+      '<th>Id</th>' +
+      '<th>Item</th>' +
+      '</tr>' +
+      '</thead>' +
+      '<tbody>' +
+      '<tr>' +
+      '<td>1</td>' +
+      '<td>Oranges</td>' +
+      '</tr>' +
+      '<tr>' +
+      '<td>2</td>' +
+      '<td>Apples</td>' +
+      '</tr>' +
+      '<tr>' +
+      '<td>3</td>' +
+      '<td>Pears</td>' +
+      '</tr>' +
+      '<tr>' +
+      '<td>4</td>' +
+      '<td>Limes</td>' +
+      '</tr>' +
+      '<tr>' +
+      '<td>5</td>' +
+      '<td>Lemons</td>' +
+      '</tr>' +
+      '</tbody>' +
+      '</table>';
+    </script>
+  </body>
+</html>
