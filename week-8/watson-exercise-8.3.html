@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--
+===============================================
+; Title: Assignment 8.3 - jQuery
+; Author: Professor Krasso
+; Date: 12 December 2020
+; Modified By: Mark Watson
+; Description: Demonstrates the use of jQuery to manipulate DOM
+===============================================
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Exercise 8.3</title>
+  <!-- jquery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- root css file -->
+  <link rel="stylesheet" href="../site.css">
+  <!-- more css styles -->
+  <style type="text/css">
+    body {
+      /* Roboto 300,400,500 from google fonts */
+      font-family: 'Roboto', sans-serif;
+      /* gets rid of white space around navbar */
+      padding: 0;
+      margin: 0;
+    }
+
+    #navbar {
+      background-color: #00eeff;
+      height: 40px;
+      /* creates space between nav and first div */
+      margin-bottom: 20px;
+    }
+
+    div {
+      /* creates space between div and table */
+      margin-bottom: 20px;
+    }
+
+    a {
+      color: blue;
+    }
+
+    .main {
+      /* creates space on left side */
+      margin-left: 20px;
+    }
+
+    /* alternate background colors for each table row */
+    tbody tr {
+      background-color: red;
+    }
+    tr:nth-child(2) {
+      background-color: darkorange;
+    }
+    tr:nth-child(3) {
+      background-color: lightgreen;
+    }
+    tr:nth-child(4) {
+      background-color: gold;
+    }
+    tr:nth-child(5) {
+      background-color: pink;
+    }
+  </style>
+</head>
+<body>
+  <!-- navbar using pure css -->
+  <nav id="navbar"></nav>
+
+  <!-- title with a paragraph that can be toggled to hide/show -->
+  <div class="main">
+    <h2>Paragraph</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac scelerisque eros, non vulputate mi. Nam ut condimentum ipsum. Phasellus porta, lectus sit amet auctor luctus, tortor elit tincidunt urna, a elementum ipsum tortor ullamcorper augue. Nam quis lectus iaculis, ornare dolor ac, maximus augue. Suspendisse potenti. Praesent molestie laoreet tincidunt. Duis dui nibh, tincidunt ut tempus at, venenatis quis turpis. Vivamus blandit ornare diam, eget sodales magna lobortis ut. Maecenas mattis imperdiet mollis. Sed dapibus elit id neque varius lacinia. In maximus leo sed sapien volutpat, at porttitor urna tristique. Etiam nec neque vitae leo porta semper vitae quis lorem. Ut aliquet sapien at ante consequat, ac dignissim leo ultrices. Fusce nec cursus augue, ac lacinia quam. In non finibus elit. Pellentesque ac augue elit.</p>
+    <button>Toggle</button>
+  </div>
+
+  <!-- table of fruits with an ID and type for each one -->
+  <table class="main">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="fruitId"><a href="#">1</a></td>
+        <td>Strawberry</td>
+      </tr>
+      <tr>
+        <td class="fruitId"><a href="#">2</a></td>
+        <td>Orange</td>
+      </tr>
+      <tr>
+        <td class="fruitId"><a href="#">3</a></td>
+        <td>Kiwi</td>
+      </tr>
+      <tr>
+        <td class="fruitId"><a href="#">4</a></td>
+        <td>Mango</td>
+      </tr>
+      <tr>
+        <td class="fruitId"><a href="#">5</a></td>
+        <td>Watermelon</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- jquery / javascript -->
+  <script type="text/javascript">
+    // hides/shows paragraph when toggle button is clicked
+    $('button').click(() => {
+      $('p').toggle();
+    })
+
+    // displays alert containing the chosen fruit's id and type when the ID field is clicked
+    $('.fruitId').click(function() {
+      let id = $(this).text();
+      let type = $(this).next('td').text();
+      alert(`Fruit_ID: ${id}\nFruit_Type: ${type}`);
+    });
+  </script>
+
+</body>
+</html>
