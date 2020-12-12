@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--
+  ===============================================
+; Title: Assignment 8.2 - Dynamic HTML
+; Author: Professor Krasso
+; Date: 11 December 2020
+; Modified By: Mark Watson
+; Description: Demonstrates how to use dynamic HTML to build an unordered list
+===============================================
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 8.2</title>
+  <!-- google fonts link -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- CSS Styles -->
+  <style type="text/css">
+    body {
+      /* Roboto 300,400,500 from google fonts */
+      font-family: 'Roboto', sans-serif;
+      /* gets rid of white space around navbar */
+      padding: 0;
+      margin: 0;
+    }
+
+    #navbar {
+      background-color: #ff761b;
+      height: 40px;
+      /* creates space between nav and list */
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      margin-left: 10px;
+    }
+
+    ul {
+      list-style: none;
+      /* centers ul */
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <!-- uses pure CSS to create navbar -->
+  <nav id="navbar"></nav>
+
+  <!-- for the script -->
+  <div id="fruits"></div>
+
+  <!-- javascript -->
+  <script>
+    // array of fruit objects
+    const fruits = [
+      {
+        id: 1,
+        type: 'Strawberry'
+      },
+      {
+        id: 2,
+        type: 'Orange'
+      },
+      {
+        id: 3,
+        type: 'Kiwi'
+      },
+      {
+        id: 4,
+        type: 'Mango'
+      },
+      {
+        id: 5,
+        type: 'Watermelon'
+      }
+    ]
+
+    // string variable containing html title and opening <ul> tag
+    let output = '<h2>Fruits</h2><ul>';
+
+    // a loop to concatenate an <li> for each fruit in the fruits array to the output variable
+    for (let i = 0; i < fruits.length; i++) {
+      output += `<li>${fruits[i].id}) ${fruits[i].type}</li>`;
+    }
+    // adds closing ul tag to output variable
+    output += '</ul>';
+
+    // outputs the output variable results to DOM
+    document.getElementById('fruits').innerHTML = output;
+  </script>
+
+</body>
+</html>
